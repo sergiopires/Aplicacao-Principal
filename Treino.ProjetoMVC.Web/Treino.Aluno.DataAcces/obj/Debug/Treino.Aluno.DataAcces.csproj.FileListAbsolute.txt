@@ -1,0 +1,12 @@
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\Treino.Aluno.DataAcces.dll.config
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\Treino.Aluno.DataAcces.dll
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\Treino.Aluno.DataAcces.pdb
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\EntityFramework.dll
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\Treino.Aluno.DomainModel.dll
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\Treino.Aluno.DomainModel.pdb
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\EntityFramework.xml
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\obj\Debug\Treino.Aluno.DataAcces.csprojResolveAssemblyReference.cache
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\obj\Debug\Treino.Aluno.DataAcces.dll
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DataAcces\obj\Debug\Treino.Aluno.DataAcces.pdb

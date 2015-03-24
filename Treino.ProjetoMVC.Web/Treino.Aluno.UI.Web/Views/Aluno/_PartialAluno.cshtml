@@ -1,0 +1,99 @@
+﻿@model AlunoVM
+
+
+@using (@Html.BeginForm())
+{
+
+    <div class="col-sm-6 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Meu Cadastro</div>
+            <div class="panel-body">
+
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Nome)
+                    @Html.TextBoxFor(x => x.Aluno.Nome, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno)
+                </div>
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Email)
+                    @Html.TextBoxFor(x => x.Aluno.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Email)
+                </div>
+
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Telefone)
+                    @Html.TextBoxFor(x => x.Aluno.Telefone, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Telefone)
+                </div>
+
+                <div>
+                    @Html.LabelFor(x => x.Aluno.DataNascimento)
+                    @Html.TextBoxFor(x => x.Aluno.DataNascimento, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.DataNascimento)
+                </div>
+
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Sexo)
+                    @Html.DropDownListFor(x => x.Aluno.Cod_Sexo, Model.ListaSexo, "Selecione", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Sexo)
+                </div>
+
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Cod_Curso)
+                    @Html.DropDownListFor(x => x.Aluno.Cod_Curso, Model.ListaCurso, "Selecione", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Curso)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Meu Endereco</div>
+            <div class="panel-body">
+
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Endereco.Rua)
+                    @Html.TextBoxFor(x => x.Aluno.Endereco.Rua, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Endereco.Rua)
+                </div>
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Endereco.NumeroCasa)
+                    @Html.TextBoxFor(x => x.Aluno.Endereco.NumeroCasa, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Endereco.NumeroCasa)
+                </div>
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Endereco.Bairro)
+                    @Html.TextBoxFor(x => x.Aluno.Endereco.Bairro, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Endereco.Bairro)
+                </div>
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Endereco.Cidade)
+                    @Html.TextBoxFor(x => x.Aluno.Endereco.Cidade, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Endereco.Cidade)
+                </div>
+                <div>
+                    @Html.LabelFor(x => x.Aluno.Endereco.Estado)
+                    @Html.TextBoxFor(x => x.Aluno.Endereco.Estado, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Aluno.Endereco.Estado)
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            @if (Request.RawUrl.EndsWith("Cadastrar"))
+            {
+                <input type="reset" id="resetar" name="limpar" value="Limpar" class="btn-danger btn" />
+            }
+
+            <input type="submit" id="cadastrar" name="cadastrar" value="cadastrar" class="btn-success btn" />
+
+        </div>
+    </div>
+
+}
+
+
+
+
+

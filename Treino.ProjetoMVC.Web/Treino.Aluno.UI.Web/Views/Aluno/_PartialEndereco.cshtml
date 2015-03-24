@@ -1,0 +1,42 @@
+﻿@model AlunoVM
+
+
+<!-- Form -->
+@using (Html.BeginForm())
+{
+    <div class="col-md-8 col-sm-6">
+
+        <div>
+            @Html.LabelFor(x => x.Aluno.Endereco.Rua)
+            @Html.TextBoxFor(x => x.Aluno.Endereco.Rua, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Aluno.Endereco.Rua)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Aluno.Endereco.NumeroCasa)
+            @Html.TextBoxFor(x => x.Aluno.Endereco.NumeroCasa, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Aluno.Endereco.NumeroCasa)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Aluno.Endereco.Bairro)
+            @Html.TextBoxFor(x => x.Aluno.Endereco.Bairro, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Aluno.Endereco.Bairro)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Aluno.Endereco.Cidade)
+            @Html.TextBoxFor(x => x.Aluno.Endereco.Cidade, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Aluno.Endereco.Cidade)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Aluno.Endereco.Estado)
+            @Html.TextBoxFor(x => x.Aluno.Endereco.Estado, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Aluno.Endereco.Estado)
+        </div>
+        <br />
+        <br />
+        <div class="col-lg-offset-2">
+            <input type="submit" id="continar" name="continuar" value="Continuar" class="btn-success btn right" />
+        </div>
+    </div>
+
+}
+

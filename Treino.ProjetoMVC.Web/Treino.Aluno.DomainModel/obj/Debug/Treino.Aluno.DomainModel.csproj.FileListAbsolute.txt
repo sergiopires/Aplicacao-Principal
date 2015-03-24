@@ -1,0 +1,4 @@
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DomainModel\bin\Debug\Treino.Aluno.DomainModel.dll
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DomainModel\bin\Debug\Treino.Aluno.DomainModel.pdb
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DomainModel\obj\Debug\Treino.Aluno.DomainModel.dll
+C:\Desenv\Treino.ProjetoMVC.Web\Treino.Aluno.DomainModel\obj\Debug\Treino.Aluno.DomainModel.pdb

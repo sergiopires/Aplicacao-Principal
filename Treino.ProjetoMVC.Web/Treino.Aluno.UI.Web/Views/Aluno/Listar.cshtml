@@ -1,0 +1,64 @@
+﻿@using PagedList.Mvc;
+
+@*@model  PagedList.IPagedList<Treino.Aluno.DomainModel.AlunoMOD>*@
+
+@model  PagedList.IPagedList<Treino.Aluno.DomainModel.AlunoMOD>
+@{
+    ViewBag.Title = "Listar";
+}
+
+
+
+@using (Html.BeginForm("Listar", "Aluno", FormMethod.Get))
+{
+    <div class="form-group">
+        @Html.TextBox("searchString", ViewBag.CurrentFilter as string, new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-default">Buscar</button>
+
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Editar </th>
+            <th>Excluir </th>
+            <th>Endereço</th>
+            <th>@Html.ActionLink("Nome", "/Listar/", new { sortOrder = ViewBag.NomeParam })</th>
+            <th>Email </th>
+            <th>Telefone </th>
+            <th>@Html.ActionLink("Data de Nascimento", "/Listar/", new { sortOrder = ViewBag.DataParam })</th>
+            <th>Sexo </th>
+            <th>Curso </th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+
+        @foreach (var aluno in Model)
+        {
+            <tr>
+                <td><a href="/Aluno/Editar/@aluno.Cod_Aluno"><span class="glyphicon-pencil"></span></a></td>
+                <td><a href="/Aluno/Remover/@aluno.Cod_Aluno"><span class="glyphicon-remove"></span></a></td>
+                <td><a href="/Aluno/Endereco/@aluno.Cod_Aluno"> <img src="~/Images/image_endereco.png" /></a></td>
+                <td>@aluno.Nome</td>
+                <td>@aluno.Email</td>
+                <td>@aluno.Telefone</td>
+                <td>@aluno.DataNascimento</td>
+                <td>@aluno.Sexo.Descricao</td>
+                <td>@aluno.Curso.Nome</td>
+
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>
+
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+
+@Html.PagedListPager(Model, page => Url.Action("Listar", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
